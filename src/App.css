@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.todo-section {
+    width: 350px;
+    background: #e8f7ec;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* TodoForm */
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-form input {
+    flex: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-form button {
+    width: auto;
+    padding: 10px 15px;
 }
 
-.App-link {
-  color: #61dafb;
+/* TodoItem */
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.completed-todo {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.delete-btn {
+    margin-left: auto;
+    background: #ffd6a5;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #ffb4a2;
+}
+
+/* TodoList */
+.todo-list {
+    margin-top: 15px;
+}
+
+/* Footer */
+.todo-footer {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #2d6a4f;
 }
